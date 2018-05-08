@@ -10,12 +10,11 @@ public class Ball : MonoBehaviour {
 		GetComponent<Rigidbody2D>().velocity = Vector2.up * speed;
 	}
 
-	float hitFactor (Vector2 ballPos, Vector2 racketPos,
-		float racketWidth){
+	float hitFactor (Vector2 ballPos, Vector2 racketPos, float racketWidth){
 			return (ballPos.x - racketPos.x) / racketWidth;
-		}
-
-		void OnCollisionEnter2D(Collision2D col){
+	}
+	
+	void OnCollisionEnter2D(Collision2D col){
 			if (col.gameObject.name == "racket"){
 				float x=hitFactor(transform.position,
 				col.transform.position,

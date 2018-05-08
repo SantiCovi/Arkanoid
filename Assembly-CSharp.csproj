@@ -53,7 +53,10 @@
   <ItemGroup>
      <Compile Include="Assets\Ball.cs" />
      <Compile Include="Assets\Brick.cs" />
+     <Compile Include="Assets\ContinuousVelocity.cs" />
+     <Compile Include="Assets\movimiento.cs" />
      <Compile Include="Assets\Racket.cs" />
+     <Compile Include="Assets\spawn.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Public/Documents/Unity Projects/Arkanoid/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
